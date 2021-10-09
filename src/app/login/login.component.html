@@ -1,0 +1,13 @@
+<div class="background-pattern"></div>
+
+<main class="login-page">  
+    <form class="login-form">
+        <label for="user-name"> Nombre de usuario</label>
+        <input required type="text" id="user-name" name="user-name" [formControl]="user" >
+        
+        <label>Contraseña</label>
+        <input required type="password" name="password" id="password" >
+
+        <button class="submit-button"  (click)= "show()">Ingresar</button>
+    </form>
+</main>
