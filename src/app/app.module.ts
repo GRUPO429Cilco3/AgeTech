@@ -10,6 +10,7 @@ import { SettingComponent } from './home/setting/setting.component';
 import { HelpComponent } from './home/help/help.component';
 import { InitComponent } from './home/init/init.component';
 import { PillsComponent } from './home/pills/pills.component';
+import { RemindersComponent } from './home/reminders/reminders.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PillsComponent } from './home/pills/pills.component';
     SettingComponent,
     HelpComponent,
     InitComponent,
-    PillsComponent
+    PillsComponent,
+    RemindersComponent
   ],
   imports: [
     BrowserModule,

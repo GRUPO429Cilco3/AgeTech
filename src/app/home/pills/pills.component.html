@@ -1,12 +1,14 @@
+<button (click)="addMedicine()">Añadir medicamento</button>
+
 <div class="pocket">
-    <div class="pill">
-        <p>Nombre de la medicina</p>
+    <div class="pill" *ngFor="let x of pills.pills">
+        <p>{{x}}</p>
         <ul class="reminder">
             Recordatorios
-            <li>Día, hora hora <button class="remove-button">-</button></li>
-            <li>Día, hora <button class="remove-button">-</button></li>
-            <li>Día, hora <button class="remove-button">-</button></li>
+            <li>Día, hora hora <button class="remove-button">quitar</button></li>
+            <li>Día, hora <button class="remove-button">quitar</button></li>
+            <li>Día, hora <button class="remove-button">quitar</button></li>
         </ul>
-        <p class="add"><button class="add-button">Añadir</button></p>
+        <p class="add"><button (click)="addReminder()" class="add-button">Añadir</button></p>
     </div>
 </div>

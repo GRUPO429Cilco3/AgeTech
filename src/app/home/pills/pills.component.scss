@@ -33,14 +33,16 @@ $azul-oscuro: #0e4b85;
             border: none;
             outline: none;
             border: 2 solid $azul-oscuro;
-            cursor: hover;
-            
+            cursor: pointer;
+            font-weight: bolder;
             
             &.remove-button {
+                padding: 5px 10px 5px 10px;
                 background-color: $rosa;
             }
 
             &.add-button {
+                color: $rosa-palido;
                 background-color: $azul;
             }
         }
