@@ -7,6 +7,8 @@ $azul-oscuro: #0e4b85;
 .login-page {
     // Full width
     width: 100%;
+    max-width: 100%;
+    overflow: auto;
     height: 100%;
     
     // Display the form center

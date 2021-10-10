@@ -5,15 +5,18 @@
 
     <main>
         <nav class="menu-bar">
-            <a class="arrowblock" id="configurationBtn"><i class="fas fa-user-cog"></i> Configuración</a>
-            <a class="arrowblock" id="notificationBtn"><i class="fas fa-bell"></i> Notificaciones</a>
-            <a class="arrowblock" id="helpBtn"><i class="fas fa-question-circle"></i> Ayuda</a>
+            <a routerLink="./Init" class="arrowblock" id="notificationBtn"><i class="fas fa-house-user"></i> Inicio</a>
+            <a routerLink="./Setting" class="arrowblock" id="configurationBtn"><i class="fas fa-user-cog"></i> Configuración</a>
+            
+            <a routerLink="./Help" class="arrowblock" id="helpBtn"><i class="fas fa-question-circle"></i> Ayuda</a>
         </nav>
 
         <div class="main-menu">
             <a class="menu-option">
                 <!-- Insert an image here -->
             </a>
+            <router-outlet></router-outlet>
         </div>
+        
     </main>
 </div>
