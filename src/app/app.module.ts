@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { SettingComponent } from './home/setting/setting.component';
 import { HelpComponent } from './home/help/help.component';
 import { InitComponent } from './home/init/init.component';
+import { PillsComponent } from './home/pills/pills.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InitComponent } from './home/init/init.component';
     LoginComponent,
     SettingComponent,
     HelpComponent,
-    InitComponent
+    InitComponent,
+    PillsComponent
   ],
   imports: [
     BrowserModule,

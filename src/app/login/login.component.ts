@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   public show():void{
     if (this.user.value=="AgeTech"){
       alert("Login exitoso!");
-      this._router.navigate(['/Home'])
+      this._router.navigate(['/Home/Init'])
 
     }
     

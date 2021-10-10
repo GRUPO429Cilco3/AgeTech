@@ -1,0 +1,57 @@
+$rosa-palido: #fff5fd;
+$rosa: #ff96ad;
+$azul: #0985cc;
+$azul-oscuro: #0e4b85;
+
+.pocket {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    .pill {
+        padding: 10px;
+        max-width: 500px;
+        min-height: 300px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 2px solid $azul-oscuro;
+
+        // Sombras
+        -webkit-box-shadow: 3px 6px 18px -4px $azul;
+        -moz-box-shadow: 3px 6px 18px -4px $azul;
+        box-shadow: 3px 6px 18px -4px $azul;
+
+        button {
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border: 2 solid $azul-oscuro;
+            cursor: hover;
+            
+            
+            &.remove-button {
+                background-color: $rosa;
+            }
+
+            &.add-button {
+                background-color: $azul;
+            }
+        }
+
+        .add {
+            width: 100%;
+            text-align: center;
+        }
+
+        > p {
+            padding: 5px;
+        }
+    }
+}
