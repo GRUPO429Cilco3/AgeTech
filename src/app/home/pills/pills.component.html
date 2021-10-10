@@ -3,11 +3,9 @@
 <div class="pocket">
     <div class="pill" *ngFor="let x of pills.pills">
         <p>{{x}}</p>
-        <ul class="reminder">
+        <ul class="reminder" >
             Recordatorios
-            <li>Día, hora hora <button class="remove-button">quitar</button></li>
-            <li>Día, hora <button class="remove-button">quitar</button></li>
-            <li>Día, hora <button class="remove-button">quitar</button></li>
+            <li *ngFor="let rem of pills.reminders">{{rem.day}} &nbsp; {{rem.hour}}<button class="remove-button">quitar</button></li>
         </ul>
         <p class="add"><button (click)="addReminder()" class="add-button">Añadir</button></p>
     </div>

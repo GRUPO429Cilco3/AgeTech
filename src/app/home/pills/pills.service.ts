@@ -5,7 +5,15 @@ import {Pill} from './pill'
   providedIn: 'root'
 })
 export class PillsService  {
-  pills =['DOLEX','ACETAMINOFEN'];
+  pills =["Dolex","Acetaminofen"];
+
+
+
+  reminders =[{
+    'pill':'Dolex',
+    'day':'Lunes',
+    'hour':"12:30"
+  }];
   //private medicamento : Array<Pill>
   constructor() {}
 

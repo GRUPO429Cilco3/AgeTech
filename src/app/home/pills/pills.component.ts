@@ -27,8 +27,8 @@ export class PillsComponent implements OnInit {
       }) 
       
   }
-  addReminder(){}
-  /* addReminder() {
+  
+  addReminder() {
     Swal.fire({
       title: 'Login Form',
       html: '<select id="day" class="swal2-input">' +
@@ -44,20 +44,30 @@ export class PillsComponent implements OnInit {
       confirmButtonText: 'Guardar',
       focusConfirm: false,
       preConfirm: () => {
-        const day = Swal.getPopup().querySelector('#day').value
-        const hour = Swal.getPopup().querySelector('#hora').value
+        let popup = Swal.getPopup();
+        let day : HTMLInputElement;
+        let hour : HTMLInputElement;
+
+        if (popup != null) {
+          if (popup.querySelector('#day') != null && popup.querySelector('#hora') != null) {
+          
+            const day = popup.querySelector('#day')
+            const hour = popup.querySelector('#hora')
+
+            console.log((<HTMLInputElement>day).value);
+            console.log((<HTMLInputElement>hour).value);
+
+            if (!(<HTMLInputElement>day).value || !(<HTMLInputElement>hour).value) {
+              Swal.showValidationMessage(`Por favor, ingrese un día y una hora validos`)
+            }
+          } else {
+
+          }
         
-        if (!day || !hour) {
-          Swal.showValidationMessage(`Por favor, ingrese un día y una hora validos`)
+          // return { day: day, hour: hour }
         }
-        return { day: day, hour: hour }
+        return null;
       }
-    }).then((result) => {
-      Swal.fire(`
-        day: ${result.value.day}
-        hour: ${result.value.hour}
-      `.trim())
-    })
-    
-  } */
+    }) 
+  }
 }
